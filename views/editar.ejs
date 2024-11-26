@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/edit" method="post">
+        <h1>Editar usuario</h1>
+        <input type="hidden" name="id" value="<%= user.id %>">
+        <div class="input">
+            <label for="name">Nombre:</label>
+        `   <input type="text" required name="name" id="name" value="<%= user.nombre %>">
+        </div>
+        <div class="input">
+            <label for="email">Correo:</label>
+            <input type="email" required name="email" id="email" value="<%= user.email %>">
+        </div>
+        <button type="submit">Editar</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

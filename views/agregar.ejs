@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Agregar</title>
+</head>
+<body>
+    
+    <form action="/add" method="post">
+        <h1>Agregar usuario</h1>
+        <div class="input">
+            <label for="name">Nombre:</label>
+            <input type="text" required name="name" id="name">
+        </div>
+        <div class="input">
+            <label for="email">Correo:</label>
+            <input type="email" required name="email" id="email">
+        </div>
+        <button type="submit">Registrar</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
